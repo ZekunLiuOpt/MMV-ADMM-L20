@@ -4,7 +4,7 @@
 % Copyright: Zekun Liu
 
 
-function B = ADMML21_1(X, A, gamma, rho)
+function B = ADMML21(X, A, gamma, rho)
 
 c = size(X,2);  % Get dimensions of B
 r = size(A,2); 
