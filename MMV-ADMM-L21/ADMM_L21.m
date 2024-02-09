@@ -26,7 +26,7 @@ for n = 1:maxIter
 
     rp = norm(B-C,'fro');
     rd = norm(Cold-C,'fro');
-    if (rp < epsilon1) && (rd < epsilon2)
+    if (rp < epsilon1) && (rd < epsilon2)  % For comparisons, one can also only check if rd<epsilon2.
         break;
     end
 end
