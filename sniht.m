@@ -1,29 +1,17 @@
-function Xnew = sniht(Y,A,k,X0supp,printitn)
-% 
-% Simultaneous Normalized Iterative Hard Thresholding algorihtm proposed 
-% in Blanchard et al (2014). 
-% Single measurement vector case is NIHT in Blumensath and Davies (2010). 
-% 
-%  INPUT  
-%        Y  :=  matrix of measurements (response)
-%        A  :=  matrix of predictors (measurement matrix) 
-%        k  :=  the number of nonzero coefficients 
-%        printitn := print iteration number (modulo)   
-% OUTPUT  
-%        Xnew    := estimated signal parameter matrix with k nonzero rows
-%        X1supp  := estimated support set of non-zeros
-%        failure := equal to 1 if algorithm failed
-%
-% Author: E. Ollila, Oct 15th, 2014
-%---------------------------------------------------
+% Existed algorithm for solving the MMV problem based on IHT
+% Input: the measurement matrix Y, the sensing matrix A, the row-sparsity k, printitn := print iteration number (modulo)
+% Output: the reconstructed sparse matrix Xnew
 
+
+function Xnew = sniht(Y,A,k,X0supp,printitn) 
+
+% Author: E. Ollila, Oct 15th, 2014
 
 [m, n] = size(A);
 [~, q] = size(Y);
 
 if nargin < 5, printitn=0; end
 if nargin < 4, X0supp=[]; end
-
 
 %%-- initial approximation is the zero matrix 
 X0  = zeros(n,q); 
@@ -98,7 +86,6 @@ for iter = 1:ITERMAX
 end
 
 %fprintf('NORIHT terminating at iter = %d crit = %f\n',iter,crit)  
-
 if iter == ITERMAX, failure=1; end;
-
 X1supp = sort(X1supp);
+end
