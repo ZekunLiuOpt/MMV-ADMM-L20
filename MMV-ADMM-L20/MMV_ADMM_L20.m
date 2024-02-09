@@ -9,6 +9,7 @@ function S = MMV_ADMM_L20(Y,Phi,s,rho)
 
 c = size(Y,2);  % Get dimensions of S
 r = size(Phi,2); 
+M = size(Phi,1);
 
 L = zeros(r,c);  % Initialize Lagragian to be nothing (seems to work well)
 maxIter = 1000;  % Set the maximum number of iterations (make really big to ensure convergence)
@@ -20,6 +21,7 @@ epsilon2 = 1e-6;
 epsilon3 = 1e-6;
 
 invA = inv(2*Phi'*Phi+rho*I);  % calculate the inverse only once outside the iterations
+% invA = I/rho-2*Phi'/(eye(M)+2*Phi*Phi'/rho)*Phi/(rho^2);  % Use the SMW-formula to calculate the inverse, call it MMV-ADMM-L20-SMW 
 
 for n = 1:maxIter
     Sold = S;
@@ -27,7 +29,9 @@ for n = 1:maxIter
     S = invA*(2*Phi'*Y + rho*C + L); 
     L = L + rho*(C - S);  
 
-    rp = norm(S-C,'fro');  % Check if satisfies the expected tolerance. For comparisons, one can also only check if rd<epsilon2
+% Check if stop criterions satisfy the expected tolerance. For comparisons, one can also only check if rd<epsilon2.
+% Call it MMV-ADMM-L20-NCC when skips the stop check. Call it MMV-ADMM-L20-SeeCC when iterates to MaxIter and records all of the rp, rd, and rl
+    rp = norm(S-C,'fro'); 
     rd = norm(Sold-S,'fro');
     rl = norm(L,'fro');
     if  (rp < epsilon1)  && (rd < epsilon2)  &&  (rl < epsilon3) 
