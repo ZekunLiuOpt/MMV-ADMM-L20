@@ -50,5 +50,5 @@ std(timesaver1)
 mean(timesaver2)
 std(timesaver2)
 
-save test9
-load test9
+save test7
+load test7
