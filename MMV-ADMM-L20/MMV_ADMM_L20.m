@@ -9,7 +9,6 @@ function S = MMV_ADMM_L20(Y,Phi,s,rho)
 
 c = size(Y,2);  % Get dimensions of S
 r = size(Phi,2); 
-M = size(Phi,1);
 
 L = zeros(r,c);  % Initialize Lagragian to be nothing (seems to work well)
 maxIter = 1000;  % Set the maximum number of iterations (make really big to ensure convergence)
