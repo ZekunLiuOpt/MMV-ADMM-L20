@@ -1,5 +1,5 @@
 % Experiments that comparing the improvement with SMW-formula to MMV-ADMM-L20
-% Copyright: Zekun Liu
+% Written by: Zekun Liu
 
 
 clear all
