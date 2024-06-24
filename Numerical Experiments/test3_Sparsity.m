@@ -82,7 +82,7 @@ for i = 1:length(K_set)
         rmsesaver4 = [rmsesaver4,RMSE(S4,S)];
         
         tic
-        S5 = ADMML_21(Y,Phi,1e-6,1e-5);
+        S5 = ADMM_L21(Y,Phi,1e-6,1e-5);
         toc
 
         timesaver5 = [timesaver5,toc];
