@@ -1,7 +1,7 @@
 % Function that solves the L21-shrink subproblem argmin_{T} kaka*||T||_{2,1}+1/2*||T-C||^2
 % Input: a given matrix C, with the parameter kaka
 % Output: the L21-shrink solution matrix T
-% Copyright: Zekun Liu
+% Written by: Zekun Liu
 
 
 function T = rowshrinkL21(C,kaka)
