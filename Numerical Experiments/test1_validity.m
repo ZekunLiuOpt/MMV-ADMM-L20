@@ -1,5 +1,5 @@
 % Experiments that test the validity of our algorithm, applying MMV-ADMM-L20-NCC (without stop criterion)
-% Written by: Zekun Liu
+% Written by: Zekun Liu (03/03/2023)
 
 
 clear all
