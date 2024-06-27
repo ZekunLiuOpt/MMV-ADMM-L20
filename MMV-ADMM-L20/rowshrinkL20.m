@@ -1,7 +1,7 @@
 % Function that solves the L20-projection subproblem
 % Input: a given matrix C, with the known number of non-zero rows s
 % Output: the L20-projection matrix T
-% Written by: Zekun Liu
+% Written by: Zekun Liu (11/2/2023)
 
 
 function T = rowshrinkL20(C,s)
