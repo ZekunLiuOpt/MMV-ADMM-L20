@@ -1,7 +1,7 @@
 % Existed algorithm for solving the MMV problem based on L21-norm
 % Input: the measurement matrix X, the sensing matrix A, the parameter gamma>0, rho>0
 % Output: the reconstructed sparse matrix B
-% Written by: Zekun Liu
+% Written by: Zekun Liu (10/02/2023)
 
 
 function B = ADMM_L21(X, A, gamma, rho)
