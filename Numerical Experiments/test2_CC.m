@@ -1,5 +1,5 @@
 % Experiments that test the convergence criterion changes averaged over T trials, applying MMV-ADMM-L20-SeeCC (record stop criterion)
-% Written by: Zekun Liu
+% Written by: Zekun Liu (03/03/2023)
 
 
 clear all
