@@ -2,7 +2,7 @@
 % Input: the measurement matrix Y, the sensing matrix Phi, the row-sparsity s (if one has the prior information; otherwise using the formula in the paper to calculate s first, and one can notice that 
 % spark(Phi)=rank(Phi)+1=M+1 holds with high probability for Gaussian random matrix), the penalty parameter rho>0
 % Output: the reconstructed sparse matrix S
-% Written by: Zekun Liu
+% Written by: Zekun Liu (02/03/2023)
 
 
 function S = MMV_ADMM_L20(Y,Phi,s,rho)
