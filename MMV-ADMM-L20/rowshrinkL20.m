@@ -4,7 +4,7 @@
 % Written by: Zekun Liu (11/02/2023)
 % Reference:
 % [1] Z. Liu and S. Yu. Alternating Direction Method of Multipliers Based on $\ell_{2,0}$-Norm for Multiple Measurement Vector Problem.
-% IEEE Transactions on Signal Processing, vol. 71, pp. 3490-3501, 2023.
+%     IEEE Transactions on Signal Processing, vol. 71, pp. 3490-3501, 2023.
 % Latest Revision: 22/07/2024
 
 
