@@ -5,7 +5,7 @@
 % the number of iterations used count
 % Written by Zhilin Zhang, David Wipf: https://github.com/JustinGirard/MatlabCISL/blob/master/MFOCUSS.m
 % Reference: 
-% [1] S.F. Cotter, B.D. Rao, K. Engan, and K.Kreutz-Delgado. Sparse solutionstolinearinverseproblemswithmultiplemeasurementvectors,”
+% [1] S. F. Cotter, B. D. Rao, K. Engan, and K. Kreutz-Delgado. Sparse solutions to linear inverse problems with multiplemeasurementvectors,”
  IEEETrans.SignalProcess.,vol.53,no.7,pp.2477–2488,2005.
 
 
