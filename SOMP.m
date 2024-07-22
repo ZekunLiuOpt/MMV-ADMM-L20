@@ -28,7 +28,7 @@ for k = 1:K
     Bk = B(:, IndexAtom);  % Orthogonal projection on the subspace spanned by all previously selected atoms
     P = pinv(Bk) * X;  % BtB(IndexAtom, IndexAtom) \ BtX(IndexAtom, :);  % (Bk' * Bk) \ Bk' * X;  % pinv(Bk) * X;
     % P =  invChol_mex(BtB(IndexAtom, IndexAtom)) * BtX(IndexAtom, :);
-    % P = inv1(BtB(IndexAtom, IndexAtom)) * BtX(IndexAtom,:);
+    % P = inv1(BtB(IndexAtom, IndexAtom)) * BtX(IndexAtom, :);
     % P = MatrixInverse(BtB(IndexAtom, IndexAtom)) * BtX(IndexAtom, :);
         
     R = X - Bk * P;  % Update residual
