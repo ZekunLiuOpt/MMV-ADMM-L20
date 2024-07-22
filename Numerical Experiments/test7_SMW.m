@@ -1,11 +1,12 @@
 % Experiments that comparing the improvement with SMW-formula to MMV-ADMM-L20
 % Written by: Zekun Liu (03/03/2023)
+% Latest Revision: 22/07/2024
 
 
 clear all
 clc
 
-%Set up
+% Set up
 N = 5000;
 M = 1500;
 K = 500;
@@ -20,24 +21,24 @@ T = 10;
 for i = 1:T
 
     Index_K = randperm(N);
-    spar_arr = randn(1,K*J);
-    S = sparse(repelem(Index_K(1:K),J),repmat([1:1:J],1,K),spar_arr,N,J);
-    Phi = sqrt(1/M)*randn(M,N);
-    Y = Phi*S;
+    spar_arr = randn(1, K * J);
+    S = sparse(repelem(Index_K(1:K), J), repmat([1:1:J], 1, K), spar_arr, N, J);
+    Phi = sqrt(1 / M) * randn(M, N);
+    Y = Phi * S;
     
     tic
     S1 = MMV_ADMM_L20(Y, Phi, K, 1);
     toc
 
-    timesaver1 = [timesaver1,toc];
-    RMSEsaver1 = [RMSEsaver1,RMSE(S1,S)];
+    timesaver1 = [timesaver1, toc];
+    RMSEsaver1 = [RMSEsaver1, RMSE(S1, S)];
 
     tic
     S2 = MMV_ADMM_L20_SMW(Y, Phi, K, 1);
     toc
 
-    timesaver2 = [timesaver2,toc];
-    RMSEsaver2 = [RMSEsaver2,RMSE(S2,S)];
+    timesaver2 = [timesaver2, toc];
+    RMSEsaver2 = [RMSEsaver2, RMSE(S2, S)];
 end
 
 mean(RMSEsaver1)
