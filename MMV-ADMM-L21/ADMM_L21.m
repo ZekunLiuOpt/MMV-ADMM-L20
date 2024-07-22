@@ -10,12 +10,12 @@
 
 function B = ADMM_L21(X, A, gamma, rho)
 
-c = size(X, 2);  % Get dimensions of B
+c = size(X, 2);   % Get the dimension of B
 r = size(A, 2); 
 
 L = zeros(r, c);  % Initialize Lagragian to be nothing (seems to work well)
-maxIter = 1000;  % Set the maximum number of iterations (make really big to ensure convergence)
-I = speye(r);  % Set the sparse identity matrix
+maxIter = 1000;   % Set the maximum number of iterations (make really big to ensure convergence)
+I = speye(r);     % Set the sparse identity matrix
 C = randn(r, c);  % Initialize C randomly
 epsilon1 = 1e-6;  %stopping criteria 
 epsilon2 = 1e-6;
