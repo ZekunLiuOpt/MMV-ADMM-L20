@@ -125,17 +125,17 @@ Avetime6 = mean(Timesaver6, 2);
 S = ['-ks'; '-ko'; '-kd'; '-kv'; '-k*'; '-k+'];
 figure;
 ind = 1.2:0.4:8.8;
-plot(ind, Avetime1, S(1,:), 'color', 'b', 'Linewidth', 1);
+plot(ind, Avetime1, S(1, :), 'color', 'b', 'Linewidth', 1);
 hold on;
-plot(ind, Avetime2, S(2,:), 'color', 'r', 'Linewidth', 1);
+plot(ind, Avetime2, S(2, :), 'color', 'r', 'Linewidth', 1);
 hold on;
-plot(ind, Avetime3, S(3,:), 'color', 'g', 'Linewidth', 1);
+plot(ind, Avetime3, S(3, :), 'color', 'g', 'Linewidth', 1);
 hold on;
-plot(ind, Avetime4, S(4,:), 'color', 'c', 'Linewidth', 1);
+plot(ind, Avetime4, S(4, :), 'color', 'c', 'Linewidth', 1);
 hold on;
-plot(ind, Avetime5, S(5,:), 'color', 'm', 'Linewidth', 1);
+plot(ind, Avetime5, S(5, :), 'color', 'm', 'Linewidth', 1);
 hold on;
-plot(ind, Avetime6, S(6,:), 'color', 'k', 'Linewidth', 1);
+plot(ind, Avetime6, S(6, :), 'color', 'k', 'Linewidth', 1);
 hold off;
 
 xlim([1.2 8.8]);
@@ -196,17 +196,17 @@ for i = 1:length(M_set)
 end
 
 figure;
-plot(ind, SuccessPercentage1, S(1,:), 'color', 'b', 'Linewidth', 1);
+plot(ind, SuccessPercentage1, S(1, :), 'color', 'b', 'Linewidth', 1);
 hold on;
-plot(ind, SuccessPercentage2, S(2,:), 'color', 'r', 'Linewidth', 1);
+plot(ind, SuccessPercentage2, S(2, :), 'color', 'r', 'Linewidth', 1);
 hold on;
-plot(ind, SuccessPercentage3, S(3,:), 'color', 'g', 'Linewidth', 1);
+plot(ind, SuccessPercentage3, S(3, :), 'color', 'g', 'Linewidth', 1);
 hold on;
-plot(ind, SuccessPercentage4, S(4,:), 'color', 'c', 'Linewidth', 1);
+plot(ind, SuccessPercentage4, S(4, :), 'color', 'c', 'Linewidth', 1);
 hold on;
-plot(ind, SuccessPercentage5, S(5,:), 'color', 'm', 'Linewidth', 1);
+plot(ind, SuccessPercentage5, S(5, :), 'color', 'm', 'Linewidth', 1);
 hold on;
-plot(ind, SuccessPercentage6, S(6,:), 'color', 'k', 'Linewidth', 1);
+plot(ind, SuccessPercentage6, S(6, :), 'color', 'k', 'Linewidth', 1);
 hold off;
 
 xlim([1.2 8.8]);
