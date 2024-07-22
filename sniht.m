@@ -64,7 +64,7 @@ for iter = 1:ITERMAX
     
     %%-- Threshold
     Xnew = zeros(n, q);
-    Xnew(X1supp, :)= X1(X1supp, :);
+    Xnew(X1supp, :) = X1(X1supp, :);
 
     %%-- Stopping criteria          
     crit = norm(Xnew - X0, 'fro')^2 / norm(Xnew, 'fro')^2;
@@ -89,7 +89,7 @@ for iter = 1:ITERMAX
         
 end
 
-%fprintf('NORIHT terminating at iter = %d crit = %f\n', iter, crit)  
+% fprintf('NORIHT terminating at iter = %d crit = %f\n', iter, crit)  
 if iter == ITERMAX, failure = 1; end;
 X1supp = sort(X1supp);
 end
