@@ -6,6 +6,7 @@
 % Reference: 
 % [1] J. D. Blanchard, M. Cermak, D. Hanle, and Y. Jing. Greedy algorithms for joint sparse recovery. 
 %     IEEE Trans. Signal Process., vol. 62, no. 7, pp. 1694–1704, Apr. 2014.
+% Lastest Revision: 22/07/2024
 
 
 function Xnew = sniht(Y,A,k,X0supp,printitn) 
