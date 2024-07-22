@@ -4,9 +4,9 @@
 % Written by jk123vip: https://github.com/jk123vip/SRC_SOMP_matlab/blob/master/SOMP.m
 % Reference: 
 % [1] S. F. Cotter, B. D. Rao, K. Engan, and K. Kreutz-Delgado. Sparse solutions to linear inverse problems with multiple measurement vectors.
-% IEEE Trans. Signal Process., vol. 53, no. 7, pp. 2477–2488, 2005.
+%     IEEE Trans. Signal Process., vol. 53, no. 7, pp. 2477–2488, 2005.
 % [2] J. A. Tropp, A. C. Gilbert, and M. Strauss. Algorithms for simultaneous sparse approximation. Part I: Greedy pursuit.
-% Signal Process., vol. 86, no. 3, pp. 572–588, Mar. 2006.
+%     Signal Process., vol. 86, no. 3, pp. 572–588, Mar. 2006.
 % Latest Revision: 22/07/2024
 
 
