@@ -110,7 +110,7 @@ xlim([0 200]);
 xlabel('iteration', 'FontSize', 15);
 ylabel('$\left \| B^{k}-S^{k} \right \|_{F}$', 'interpreter', 'latex', 'FontSize', 15);
 set(gca, 'FontName', 'Times New Roman', 'FontSize', 17);
-%title('The average change of the first convergence criterion', 'FontSize', 15);
+% title('The average change of the first convergence criterion', 'FontSize', 15);
 
 figure;
 ind = 1:200;
@@ -119,7 +119,7 @@ xlim([0 200]);
 xlabel('iteration', 'FontSize', 15);
 ylabel('$\left \| S^{k+1}-S^{k} \right \|_{F}$', 'interpreter', 'latex', 'FontSize', 15);
 set(gca, 'FontName', 'Times New Roman', 'FontSize', 17);
-%title('The average change of the second convergence criterion', 'FontSize', 15);
+% title('The average change of the second convergence criterion', 'FontSize', 15);
 
 figure;
 ind = 1:200;
@@ -128,7 +128,7 @@ xlim([0 200]);
 xlabel('iteration', 'FontSize', 15);
 ylabel('$\left \| L^{k} \right \|_{F}$', 'interpreter', 'latex', 'FontSize', 15);
 set(gca, 'FontName', 'Times New Roman', 'FontSize', 17);
-%title('The average change of the third convergence criterion', 'FontSize', 15);
+% title('The average change of the third convergence criterion', 'FontSize', 15);
 
 save test2
 load test2
