@@ -7,7 +7,7 @@
 % Reference: 
 % [1] S. F. Cotter, B. D. Rao, K. Engan, and K. Kreutz-Delgado. Sparse solutions to linear inverse problems with multiple measurement vectors.
 %     IEEE Trans. Signal Process., vol. 53, no. 7, pp. 2477–2488, 2005.
-% Lastest Revision: 22/07/2024
+% Latest Revision: 22/07/2024
 
 
 function [X, gamma_ind, gamma_est, count] = MFOCUSS(Phi, Y, lambda, varargin)
