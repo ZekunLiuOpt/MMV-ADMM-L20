@@ -91,7 +91,7 @@ while (1)
     if (d1 > 1)     diag_S = diag(S);
     else            diag_S = S(1);      end;
 
-    U_scaled = U(:, 1:min(N,m)) .* repmat((diag_S ./ (diag_S.^2 + sqrt(lambda) + 1e-16))', N, 1);
+    U_scaled = U(:, 1:min(N, m)) .* repmat((diag_S ./ (diag_S.^2 + sqrt(lambda) + 1e-16))', N, 1);
     Xi = G' .* (V * U_scaled');
 
     mu_old = mu;
@@ -121,7 +121,7 @@ gamma_est(keep_list, 1) = gamma;
 
 % expand the final solution
 X = zeros(M, L);
-X(keep_list,:) = mu;   
+X(keep_list, :) = mu;   
 
 if (PRINT) fprintf('\nM-FOCUSS finished !\n'); end
 return;
