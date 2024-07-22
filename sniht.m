@@ -1,9 +1,11 @@
 % Existed algorithm for solving the MMV problem based on IHT
 % Input: the measurement matrix Y, the sensing matrix A, the row-sparsity k, printitn := print iteration number (modulo)
 % Output: the reconstructed sparse matrix Xnew
-% Written by E. Ollila (15/10/2014)
-% Reference: J. D. Blanchard, M. Cermak, D. Hanle, and Y. Jing. Greedy algorithms for joint sparse recovery. 
-% IEEE Trans. Signal Process., vol. 62, no. 7, pp. 1694–1704, Apr. 2014.
+% Written by E. Ollila (15/10/2014): 
+% https://github.com/AmmarMian/huber_mm_framework/blob/9b2f84772e21807c6ea6fb72c18d33c99b51b2e6/python/notebooks/matlab/sniht.m#L4
+% Reference: 
+% [1] J. D. Blanchard, M. Cermak, D. Hanle, and Y. Jing. Greedy algorithms for joint sparse recovery. 
+%     IEEE Trans. Signal Process., vol. 62, no. 7, pp. 1694–1704, Apr. 2014.
 
 
 function Xnew = sniht(Y,A,k,X0supp,printitn) 
