@@ -3,6 +3,10 @@
 % In the noiseless cases, simply setting lambda = 1e-10 leads to good performance.
 % Output: the reconstructed sparse matrix X, the indexes of nonzero gamma_ind, the final values of all the gamma_ind (including zeros) gamma_est,
 % the number of iterations used count
+% Written by Zhilin Zhang, David Wipf: https://github.com/JustinGirard/MatlabCISL/blob/master/MFOCUSS.m
+% Reference: 
+% [1] S.F. Cotter, B.D. Rao, K. Engan, and K.Kreutz-Delgado. Sparse solutionstolinearinverseproblemswithmultiplemeasurementvectors,”
+ IEEETrans.SignalProcess.,vol.53,no.7,pp.2477–2488,2005.
 
 
 function [X, gamma_ind, gamma_est, count] = MFOCUSS(Phi, Y, lambda, varargin)
