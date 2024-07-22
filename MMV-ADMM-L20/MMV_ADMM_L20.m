@@ -12,7 +12,7 @@
 
 function S = MMV_ADMM_L20(Y, Phi, s, rho)
 
-c = size(Y, 2);   % Get dimensions of S
+c = size(Y, 2);   % Get the dimension of S
 r = size(Phi, 2); 
 
 L = zeros(r, c);  % Initialize Lagragian to be nothing (seems to work well)
@@ -34,8 +34,9 @@ for n = 1:maxIter
     S = invA * (2 * Phi' * Y + rho * C + L); 
     L = L + rho * (C - S);  
 
-% Check if stop criterions satisfy the expected tolerance. For comparisons, one can also only check if rd < epsilon2.
-% Call it MMV-ADMM-L20-NCC when skips the stop check. Call it MMV-ADMM-L20-SeeCC when iterates to MaxIter and records all of the rp, rd, and rl
+% Check if stop criterions satisfy the expected tolerance. For comparisons, one can also only check if rd < epsilon2
+% Call it MMV-ADMM-L20-NCC when skips the stop check
+% Call it MMV-ADMM-L20-SeeCC when iterates to MaxIter and records all of the rp, rd, and rl
     rp = norm(S - C, 'fro'); 
     rd = norm(Sold - S, 'fro');
     rl = norm(L, 'fro');
