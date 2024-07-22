@@ -1,5 +1,5 @@
 % Existed algorithm for solving the MMV problem based on FOCUSS
-% Input: the measurement matrix Y, the sensing matrix Phi, the regularization parameter lambda>0, generally it is close to the noise variance. 
+% Input: the measurement matrix Y, the sensing matrix Phi, the regularization parameter lambda > 0, generally it is close to the noise variance. 
 % In the noiseless cases, simply setting lambda = 1e-10 leads to good performance.
 % Output: the reconstructed sparse matrix X, the indexes of nonzero gamma_ind, the final values of all the gamma_ind (including zeros) gamma_est,
 % the number of iterations used count
@@ -16,7 +16,7 @@ function [X, gamma_ind, gamma_est, count] = MFOCUSS(Phi, Y, lambda, varargin)
 %  'p'            : p-norm. p lies in [0,1].  Default value: p = 0.8
 %  'PRUNE_GAMMA'  : Threshold for prunning small gamma_i.
 %                   In noisy cases, you can set PRUNE_GAMMA = 1e-3 or 1e-4.
-%                   In strongly noisy cases (SNR<=5 dB), suggest to set PRUNE_GAMMA = 0.01;
+%                   In strongly noisy cases (SNR <= 5 dB), suggest to set PRUNE_GAMMA = 0.01;
 %                   Default value: MIN_GAMMA = 1e-4. 
 %  'PRINT'        : Display flag. If PRINT = 1: show output; If PRINT = 0: supress output
 %                   Default value: PRINT = 0
