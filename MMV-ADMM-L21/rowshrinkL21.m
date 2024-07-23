@@ -5,7 +5,7 @@
 % Reference:
 % [1] Q. Qu, N. M. Nasrabadi, and T. D. Tran. Abundance estimation for bilinear mixture models via joint sparse 
 %     and low-rank representation. IEEE Trans. Geosci. Remote Sens., vol. 52, no. 7, pp. 4404–4423, Jul.2014.
-% Latest Revision: 07/22/2024
+% Latest Revision: 23/07/2024
 
 
 function T = rowshrinkL21(C, kaka)
