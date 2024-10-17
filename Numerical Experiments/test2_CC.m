@@ -1,5 +1,8 @@
-% Experiments that test the convergence criterion changes averaged over T trials, applying MMV-ADMM-L20-SeeCC (record stop criterion)
-% Written by: Zekun Liu (03/03/2023)
+% Experiments that test the convergence criterion changes averaged over T trials
+% applying MMV-ADMM-L20-SeeCC (record stop criterion)
+%
+% Written by Zekun Liu, 03/03/2023
+%
 % Latest Revision: 22/07/2024
 
 
@@ -38,7 +41,7 @@ Ave_C1 = mean(criterion1saver);
 Ave_C2 = mean(criterion2saver);
 Ave_C3 = mean(criterion3saver);
 
-% plot the average change of convergence criterion
+%% plot the average change of convergence criterion
 figure;
 ind = 1:1000;
 plot(ind, Ave_C1, 'LineWidth', 1.25);
@@ -63,9 +66,9 @@ xlabel('iteration');
 ylabel('norm(L^{k},''fro'')');
 title('The change of the third convergence criterion in iteration');
 
-% compare the influence of the convergence criterion
+%% compare the influence of the convergence criterion
 
-timesaver1 = [];  % No convergence criterion
+timesaver1 = [];  % Without convergence criterion
 RMSEsaver1 = [];
 timesaver2 = [];  % With convergence criterion
 RMSEsaver2 = [];
@@ -131,4 +134,3 @@ set(gca, 'FontName', 'Times New Roman', 'FontSize', 17);
 % title('The average change of the third convergence criterion', 'FontSize', 15);
 
 save test2
-load test2
