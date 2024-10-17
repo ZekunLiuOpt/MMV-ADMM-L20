@@ -1,6 +1,8 @@
 % Experiments that comparing the improvement with SMW-formula to MMV-ADMM-L20
-% Written by: Zekun Liu (03/03/2023)
-% Latest Revision: 22/07/2024
+%
+% Written by Zekun Liu, 03/03/2023
+%
+% Latest Revision: 17/10/2024
 
 
 clear all
@@ -52,4 +54,3 @@ mean(timesaver2)
 std(timesaver2)
 
 save test7
-load test7
