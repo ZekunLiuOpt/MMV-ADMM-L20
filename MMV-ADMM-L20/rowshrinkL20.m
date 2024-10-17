@@ -1,11 +1,20 @@
 % Function that solves the L20-projection subproblem
-% Input: a given matrix C, with the known number of non-zero rows s
-% Output: the L20-projection matrix T
-% Written by: Zekun Liu (11/02/2023)
+%
+% Input: 
+%         C: a given matrix 
+%         s: the known number of non-zero rows
+%
+% Output: 
+%         T: the L20-projection matrix 
+%
+% Written by Zekun Liu, 11/02/2023
+%
 % Reference:
-% [1] Z. Liu and S. Yu. Alternating Direction Method of Multipliers Based on $\ell_{2,0}$-Norm for Multiple Measurement Vector Problem.
+% [1] Z. Liu and S. Yu. 
+%     Alternating Direction Method of Multipliers Based on $\ell_{2,0}$-Norm for Multiple Measurement Vector Problem.
 %     IEEE Transactions on Signal Processing, vol. 71, pp. 3490-3501, 2023.
-% Latest Revision: 22/07/2024
+%
+% Latest Revision: 17/10/2024
 
 
 function T = rowshrinkL20(C, s)
