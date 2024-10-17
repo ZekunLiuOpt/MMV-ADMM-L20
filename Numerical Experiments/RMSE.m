@@ -1,8 +1,15 @@
 % Function that calculates the RMSE 
-% Input: a recovered matrix x1, a ground truth x2
-% Output: the RMSE of x1 to x2
-% Written by: Zekun Liu (02/03/2023)
-% Latest Revision: 22/07/2024
+%
+% Input: 
+%         x1: the recovered matrix
+%         x2: the ground truth
+%
+% Output: 
+%          y: the RMSE of x1 and x2
+%
+% Written by Zekun Liu, 02/03/2023
+%
+% Latest Revision: 17/10/2024
 
 
 function y = RMSE(x1, x2)
