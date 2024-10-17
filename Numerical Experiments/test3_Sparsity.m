@@ -1,6 +1,8 @@
 % Experiments that comparing the performance of different algorithms under different sparsity levels
-% Written by: Zekun Liu (03/03/2023)
-% Latest Revision: 22/07/2024
+%
+% Written by Zekun Liu, 03/03/2023
+%
+% Latest Revision: 17/10/2024
 
 
 clear all
@@ -10,7 +12,8 @@ clc
 N = 500;
 M = 150;
 J = 10;
-options = spgSetParms('iterations', 1000, 'bpTol', 1e-6, 'optTol', 1e-6);  % Parameter settings for SPGL1
+% Parameter settings for SPGL1
+options = spgSetParms('iterations', 1000, 'bpTol', 1e-6, 'optTol', 1e-6);  
 
 K_set = [30:5:125];  % Tested sparsity 
 
@@ -119,7 +122,7 @@ Avetime4 = mean(Timesaver4, 2);
 Avetime5 = mean(Timesaver5, 2);
 Avetime6 = mean(Timesaver6, 2);
 
-% plot
+%% plot
 S = ['-ks'; '-ko'; '-kd'; '-kv'; '-k*'; '-k+'];
 figure;
 ind = 0.06:0.01:0.25;
@@ -219,4 +222,3 @@ ylabel('Percentage of successful recovery');
 % title('Percentage of successful recovery of different algorithms with different sparsity');
 
 save test3
-load test3
