@@ -1,6 +1,8 @@
 % Experiments that comparing the performance of different algorithms under different compressive rate
-% Written by: Zekun Liu (03/03/2023)
-% Latest Revision: 22/07/2024
+%
+% Written by Zekun Liu, 03/03/2023
+%
+% Latest Revision: 17/10/2024
 
 
 clear all
@@ -121,7 +123,7 @@ Avetime4 = mean(Timesaver4, 2);
 Avetime5 = mean(Timesaver5, 2);
 Avetime6 = mean(Timesaver6, 2);
 
-% plot
+%% plot
 S = ['-ks'; '-ko'; '-kd'; '-kv'; '-k*'; '-k+'];
 figure;
 ind = 1.2:0.4:8.8;
@@ -221,4 +223,3 @@ ylabel('Percentage of successful recovery');
 % title('Percentage of successful recovery of different algorithms with different undersampling rate');
 
 save test4
-load test4
